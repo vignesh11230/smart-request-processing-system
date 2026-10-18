@@ -1,0 +1,729 @@
+[
+  {
+    "id": "cf005fab-2f17-4dee-a504-3d3aa9dcd809",
+    "message": "My washing machine is broken and needs repair.",
+    "type": "service_request",
+    "urgency": "Medium",
+    "actions": [
+      "Schedule an on-site inspection with a certified repair technician",
+      "Request the appliance model number and purchase details to check warranty coverage"
+    ],
+    "workflow": {
+      "branch": "Service Request Remediation",
+      "status": "Routed for service review",
+      "steps": [
+        "Service request classified",
+        "Required information checked",
+        "Request routed to the service team",
+        "Confirmation draft and SLA review flag created"
+      ],
+      "outputs": {
+        "extractedDetails": {
+          "originalRequest": "My washing machine is broken and needs repair.",
+          "missingDetails": [
+            "Order or reference number, if applicable"
+          ]
+        },
+        "routedTeam": "Technical Service Team",
+        "confirmationDraft": "We have received your service request: \"My washing machine is broken and needs repair.\". Our service team will review the details and confirm the next steps.",
+        "sla": {
+          "reviewRequired": true,
+          "status": "SLA review flag created; timer not running"
+        },
+        "caseLog": {
+          "type": "service_request",
+          "urgency": "Medium",
+          "status": "Open - Service review required"
+        }
+      },
+      "actions": [
+        "Schedule an on-site inspection with a certified repair technician",
+        "Request the appliance model number and purchase details to check warranty coverage"
+      ]
+    },
+    "createdAt": "2026-10-18T16:11:18.233Z"
+  },
+  {
+    "id": "d875fa9b-7c1f-43a5-9353-d96c608693a3",
+    "message": "What are your business hours?",
+    "type": "general_enquiry",
+    "urgency": "Low",
+    "actions": [
+      "Provide standard business operating hours and holiday schedules.",
+      "Share a link to the official website or contact page for further inquiries."
+    ],
+    "workflow": {
+      "branch": "General Enquiry Remediation",
+      "status": "Response draft prepared",
+      "steps": [
+        "Enquiry classified",
+        "General enquiry response draft prepared",
+        "Request marked for response review",
+        "Processing status recorded"
+      ],
+      "outputs": {
+        "responseDraft": "Thank you for your enquiry: \"What are your business hours?\". We have received your question. The relevant team should review it and confirm an accurate answer.",
+        "routedTeam": "Customer Support",
+        "resolutionStatus": "Awaiting response review",
+        "caseLog": {
+          "type": "general_enquiry",
+          "urgency": "Low",
+          "status": "Response draft prepared"
+        }
+      },
+      "actions": [
+        "Provide standard business operating hours and holiday schedules.",
+        "Share a link to the official website or contact page for further inquiries."
+      ]
+    },
+    "createdAt": "2026-10-18T16:09:39.216Z"
+  },
+  {
+    "id": "8eb664be-69b2-462a-97a9-b3093d643291",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the customer billing records and transaction history for the duplicate charge",
+      "Initiate an immediate refund for the duplicate payment",
+      "Send a confirmation message to the customer with transaction details and the refund reference number"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the customer billing records and transaction history for the duplicate charge",
+        "Initiate an immediate refund for the duplicate payment",
+        "Send a confirmation message to the customer with transaction details and the refund reference number"
+      ]
+    },
+    "createdAt": "2026-10-18T16:06:10.451Z"
+  },
+  {
+    "id": "5eb6b24a-f6d4-44c3-ac16-154b461ee958",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the customer's payment history and transaction logs for duplicate charges.",
+      "Initiate an immediate refund for the redundant charge.",
+      "Send a confirmation email with refund transaction details to the customer."
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the customer's payment history and transaction logs for duplicate charges.",
+        "Initiate an immediate refund for the redundant charge.",
+        "Send a confirmation email with refund transaction details to the customer."
+      ]
+    },
+    "createdAt": "2026-10-18T15:55:56.505Z"
+  },
+  {
+    "id": "ce86f7c3-0a51-45f6-841d-623aa6ffedb4",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the customer's payment history to confirm the duplicate charge",
+      "Process a refund for the duplicate transaction immediately",
+      "Send a confirmation email to the customer with the refund receipt and timeline"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the customer's payment history to confirm the duplicate charge",
+        "Process a refund for the duplicate transaction immediately",
+        "Send a confirmation email to the customer with the refund receipt and timeline"
+      ]
+    },
+    "createdAt": "2026-10-18T14:51:20.677Z"
+  },
+  {
+    "id": "39cb6f59-8baa-4db0-a3e0-9e5334c1c405",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the customer's account and billing history for duplicate transactions.",
+      "Issue a prompt refund for the duplicate charge and notify the customer via email."
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the customer's account and billing history for duplicate transactions.",
+        "Issue a prompt refund for the duplicate charge and notify the customer via email."
+      ]
+    },
+    "createdAt": "2026-10-18T14:50:26.920Z"
+  },
+  {
+    "id": "ce561962-c589-4613-a313-c407d68ef569",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the customer's transaction history to confirm the duplicate charge.",
+      "Initiate an immediate refund for the extra transaction and send a confirmation email."
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the customer's transaction history to confirm the duplicate charge.",
+        "Initiate an immediate refund for the extra transaction and send a confirmation email."
+      ]
+    },
+    "createdAt": "2026-10-18T14:43:45.628Z"
+  },
+  {
+    "id": "18af6fd7-9010-4ba9-b841-4827564f9151",
+    "message": "What are your business hours?",
+    "type": "general_enquiry",
+    "urgency": "Low",
+    "actions": [
+      "Provide current standard operating and holiday hours.",
+      "Share a link to the official website's contact or location page."
+    ],
+    "workflow": {
+      "branch": "General Enquiry Remediation",
+      "status": "Response draft prepared",
+      "steps": [
+        "Enquiry classified",
+        "General enquiry response draft prepared",
+        "Request marked for response review",
+        "Processing status recorded"
+      ],
+      "outputs": {
+        "responseDraft": "Thank you for your enquiry: \"What are your business hours?\". We have received your question. The relevant team should review it and confirm an accurate answer.",
+        "routedTeam": "Customer Support",
+        "resolutionStatus": "Awaiting response review",
+        "caseLog": {
+          "type": "general_enquiry",
+          "urgency": "Low",
+          "status": "Response draft prepared"
+        }
+      },
+      "actions": [
+        "Provide current standard operating and holiday hours.",
+        "Share a link to the official website's contact or location page."
+      ]
+    },
+    "createdAt": "2026-10-18T09:34:05.568Z"
+  },
+  {
+    "id": "c523541d-543b-48ee-b5e6-dd823047ff5d",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the customer's transaction history for duplicate charges",
+      "Process a refund for the duplicate transaction and send confirmation to the customer"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the customer's transaction history for duplicate charges",
+        "Process a refund for the duplicate transaction and send confirmation to the customer"
+      ]
+    },
+    "createdAt": "2026-10-18T09:29:00.233Z"
+  },
+  {
+    "id": "4f085f71-e0f3-493b-ae34-35628ff9c5bb",
+    "message": "I was charged twice for my order. Please resolve this immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the duplicate transaction details in the billing system",
+      "Initiate a refund for the duplicate charge and notify the customer"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order. Please resolve this immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the duplicate transaction details in the billing system",
+        "Initiate a refund for the duplicate charge and notify the customer"
+      ]
+    },
+    "createdAt": "2026-10-18T09:05:18.356Z"
+  },
+  {
+    "id": "19e07d5e-1929-4225-8149-5977971b0413",
+    "message": "I was charged twice for my order, but I received only one item. Please investigate the duplicate payment and resolve this issue immediately.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Verify the duplicate payment in the billing and transaction logs.",
+      "Process a refund for the extra charge and confirm resolution with the customer."
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"I was charged twice for my order, but I received only one item. Please investigate the duplicate payment and resolve this issue immediately.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Verify the duplicate payment in the billing and transaction logs.",
+        "Process a refund for the extra charge and confirm resolution with the customer."
+      ]
+    },
+    "createdAt": "2026-10-18T08:53:11.063Z"
+  },
+  {
+    "id": "b477a94b-8278-45c5-be75-7dc58db8bb03",
+    "message": "My washing machine is broken and needs repair.",
+    "type": "service_request",
+    "urgency": "Medium",
+    "actions": [
+      "Gather washing machine model details and symptoms of the issue",
+      "Schedule an on-site appointment with a certified repair technician"
+    ],
+    "workflow": {
+      "branch": "Service Request Remediation",
+      "status": "Routed for service review",
+      "steps": [
+        "Service request classified",
+        "Required information checked",
+        "Request routed to the service team",
+        "Confirmation draft and SLA review flag created"
+      ],
+      "outputs": {
+        "extractedDetails": {
+          "originalRequest": "My washing machine is broken and needs repair.",
+          "missingDetails": [
+            "Order or reference number, if applicable"
+          ]
+        },
+        "routedTeam": "Technical Service Team",
+        "confirmationDraft": "We have received your service request: \"My washing machine is broken and needs repair.\". Our service team will review the details and confirm the next steps.",
+        "sla": {
+          "reviewRequired": true,
+          "status": "SLA review flag created; timer not running"
+        },
+        "caseLog": {
+          "type": "service_request",
+          "urgency": "Medium",
+          "status": "Open - Service review required"
+        }
+      },
+      "actions": [
+        "Gather washing machine model details and symptoms of the issue",
+        "Schedule an on-site appointment with a certified repair technician"
+      ]
+    },
+    "createdAt": "2026-10-18T08:24:43.901Z"
+  },
+  {
+    "id": "ffb87c6b-9a91-4a34-9c00-79b7e2ec9312",
+    "message": "What are your business hours?",
+    "type": "general_enquiry",
+    "urgency": "Low",
+    "actions": [
+      "Provide the current standard operating hours for all relevant departments",
+      "Share a link to the official website or contact page with location-specific hours"
+    ],
+    "workflow": {
+      "branch": "General Enquiry Remediation",
+      "status": "Response draft prepared",
+      "steps": [
+        "Enquiry classified",
+        "General enquiry response draft prepared",
+        "Request marked for response review",
+        "Processing status recorded"
+      ],
+      "outputs": {
+        "responseDraft": "Thank you for your enquiry: \"What are your business hours?\". We have received your question. The relevant team should review it and confirm an accurate answer.",
+        "routedTeam": "Customer Support",
+        "resolutionStatus": "Awaiting response review",
+        "caseLog": {
+          "type": "general_enquiry",
+          "urgency": "Low",
+          "status": "Response draft prepared"
+        }
+      },
+      "actions": [
+        "Provide the current standard operating hours for all relevant departments",
+        "Share a link to the official website or contact page with location-specific hours"
+      ]
+    },
+    "createdAt": "2026-10-18T08:22:22.287Z"
+  },
+  {
+    "id": "d6a33f26-b93e-4db2-a137-92869e599ff9",
+    "message": "My order has not arrived, and I need help urgently",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Track the shipment and check the latest courier status",
+      "Contact the customer to provide an immediate delivery update and options for resolution"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"My order has not arrived, and I need help urgently\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Track the shipment and check the latest courier status",
+        "Contact the customer to provide an immediate delivery update and options for resolution"
+      ]
+    },
+    "createdAt": "2026-10-18T08:17:40.334Z"
+  },
+  {
+    "id": "a254873e-e8ae-48c8-a8e3-970aa6b5c3c3",
+    "message": "My order has not arrived, and I need help urgently",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Check shipment tracking status and carrier details",
+      "Contact the logistics provider to locate the package",
+      "Reach out to the customer with an updated delivery estimate or resolution options"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"My order has not arrived, and I need help urgently\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Check shipment tracking status and carrier details",
+        "Contact the logistics provider to locate the package",
+        "Reach out to the customer with an updated delivery estimate or resolution options"
+      ]
+    },
+    "createdAt": "2026-10-18T08:17:21.404Z"
+  },
+  {
+    "id": "f201d6ff-f775-4fb2-b8ff-97c9596494a0",
+    "message": "My order has not arrived, and I need help urgently.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Check shipment tracking status with the delivery partner",
+      "Contact the customer to provide a delivery update and offer expedited resolution or refund"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"My order has not arrived, and I need help urgently.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Check shipment tracking status with the delivery partner",
+        "Contact the customer to provide a delivery update and offer expedited resolution or refund"
+      ]
+    },
+    "createdAt": "2026-10-18T08:07:26.874Z"
+  },
+  {
+    "id": "41330b30-fd87-452b-a499-6ebeab9a2282",
+    "message": "My internet connection is not working, and I need urgent help.",
+    "type": "service_request",
+    "urgency": "High",
+    "actions": [
+      "Check for network outages in the customer's area and run remote line diagnostics",
+      "Guide the customer through basic hardware troubleshooting such as power cycling the modem and router",
+      "Escalate the ticket to technical support for priority technician dispatch if the connection cannot be restored remotely"
+    ],
+    "workflow": {
+      "branch": "Service Request Remediation",
+      "status": "Routed for service review",
+      "steps": [
+        "Service request classified",
+        "Required information checked",
+        "Request routed to the service team",
+        "Confirmation draft and SLA review flag created"
+      ],
+      "outputs": {
+        "extractedDetails": {
+          "originalRequest": "My internet connection is not working, and I need urgent help.",
+          "missingDetails": [
+            "Order or reference number, if applicable"
+          ]
+        },
+        "routedTeam": "Technical Service Team",
+        "confirmationDraft": "We have received your service request: \"My internet connection is not working, and I need urgent help.\". Our service team will review the details and confirm the next steps.",
+        "sla": {
+          "reviewRequired": true,
+          "status": "SLA review flag created; timer not running"
+        },
+        "caseLog": {
+          "type": "service_request",
+          "urgency": "High",
+          "status": "Open - Service review required"
+        }
+      },
+      "actions": [
+        "Check for network outages in the customer's area and run remote line diagnostics",
+        "Guide the customer through basic hardware troubleshooting such as power cycling the modem and router",
+        "Escalate the ticket to technical support for priority technician dispatch if the connection cannot be restored remotely"
+      ]
+    },
+    "createdAt": "2026-10-18T07:35:27.537Z"
+  },
+  {
+    "id": "dde8b251-60ab-4788-9ffe-9fce54176a45",
+    "message": "My order has not arrived, and I need help urgently.",
+    "type": "complaint",
+    "urgency": "High",
+    "actions": [
+      "Track the shipment with the courier partner to determine current delivery status",
+      "Reach out to the customer immediately with the order status update and potential resolution"
+    ],
+    "workflow": {
+      "branch": "Complaint Remediation",
+      "status": "Escalation required",
+      "steps": [
+        "Complaint classified and recorded",
+        "Customer acknowledgement draft prepared",
+        "Case flagged for senior support review",
+        "High-priority follow-up flag created"
+      ],
+      "outputs": {
+        "acknowledgementDraft": "We are sorry to hear about your experience. We have received your complaint: \"My order has not arrived, and I need help urgently.\". Our support team needs to review this issue and follow up with you.",
+        "routedTeam": "Senior Customer Support",
+        "priority": "High",
+        "followUp": {
+          "required": true,
+          "target": "Within 2 hours",
+          "status": "Flag created; reminder not scheduled"
+        },
+        "caseLog": {
+          "type": "complaint",
+          "urgency": "High",
+          "status": "Open - Escalation required"
+        }
+      },
+      "actions": [
+        "Track the shipment with the courier partner to determine current delivery status",
+        "Reach out to the customer immediately with the order status update and potential resolution"
+      ]
+    },
+    "createdAt": "2026-10-18T07:23:15.866Z"
+  }
+]
