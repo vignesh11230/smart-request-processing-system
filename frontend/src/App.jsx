@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import "./App.css";
-
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 const samples = [
   {
     label: "Customer complaint",
@@ -52,7 +52,7 @@ function App() {
     setHistoryLoading(true);
     setHistoryError("");
     try {
-      const response = await fetch("http://localhost:5000/api/requests");
+      const response = await fetch(`${API_URL}/api/requests`);
       const data = await response.json();
 
       if (!response.ok) {
