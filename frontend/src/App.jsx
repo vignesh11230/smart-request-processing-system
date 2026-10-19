@@ -89,7 +89,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/process", {
+      const response = await fetch(`${API_URL}/api/process`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: cleanMessage }),
