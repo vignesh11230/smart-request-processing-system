@@ -1,7 +1,9 @@
-
 import { useState } from "react";
 import "./App.css";
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"; 
+const API_URL = (
+  import.meta.env.VITE_API_URL ||
+  "https://smart-request-processing-system.onrender.com"
+).replace(/\/+$/, "");
 const samples = [
   {
     label: "Customer complaint",
@@ -53,7 +55,7 @@ function App() {
     setHistoryError("");
     try {
       const response = await fetch(`${API_URL}/api/requests`);
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
       if (!response.ok) {
         throw new Error(data.error || "Could not load request history.");
@@ -95,7 +97,7 @@ function App() {
         body: JSON.stringify({ message: cleanMessage }),
       });
 
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
       if (!response.ok) {
         throw new Error(data.error || "Request processing failed.");
@@ -112,9 +114,13 @@ function App() {
       setStatusExpanded(false);
       if (historyOpen) await loadRequestHistory();
     } catch (err) {
+      const message = err?.message || "Unknown network error.";
+      const isNetworkError =
+        err instanceof TypeError || /failed to fetch|networkerror/i.test(message);
       setError(
-        err.message ||
-          "Could not connect to the backend. Check that server.js is running."
+        isNetworkError
+          ? `Cannot reach the backend at ${API_URL}. Confirm the Render service is live and VITE_API_URL is set in Vercel, then redeploy.`
+          : message
       );
     } finally {
       setLoading(false);
